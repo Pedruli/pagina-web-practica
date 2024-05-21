@@ -1,4 +1,3 @@
-/* Estilos personalizados */
 body {
   padding-top: 4.5rem;
 }
@@ -11,7 +10,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Estilos personalizados para el botón de compra */
 .btn-comprar {
   width: 100%;
 }
