@@ -56,3 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+document.getElementById('searchButton').addEventListener('click', function() {
+  var searchTerm = document.getElementById('searchInput').value;
+  document.getElementById('searchResults').innerHTML = "<p>Resultados para: " + searchTerm + "</p>";
+});

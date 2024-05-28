@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Librería</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .search-container {
+      position: relative;
+      margin-top: 10px;
+    }
+    .search-input {
+      width: 150px;
+      height: 30px;
+      border-radius: 20px;
+      padding: 5px 15px;
+    }
+    .search-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,6 +48,10 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
+        <div class="search-container">
+          <input type="text" class="form-control search-input" placeholder="Buscar...">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
       </div>
     </nav>
   </header>
@@ -90,4 +116,5 @@
   </script>
 </body>
 </html>
+
 
