@@ -3,30 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Librería</title>
+  <title>Contacto - Librería</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .search-container {
-      position: relative;
-      margin-top: 10px;
-    }
-    .search-input {
-      width: 150px;
-      height: 30px;
-      border-radius: 20px;
-      padding: 5px 15px;
-    }
-    .search-button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      border: none;
-      background-color: transparent;
-      padding: 0 10px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -48,57 +26,38 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
-        <div class="search-container">
-          <input type="text" class="form-control search-input" placeholder="Buscar...">
-          <button class="search-button"><i class="fas fa-search"></i></button>
-        </div>
       </div>
     </nav>
   </header>
 
   <div class="container">
-    <h1>Bienvenido a nuestra librería</h1>
-    <h2>Algunos libros destacados</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">El nombre del viento</h5>
-            <p class="card-text">Autor: Patrick Rothfuss</p>
-            <p class="card-text">Año: 2007</p>
-            <p class="card-text">Precio: $20</p>
-            <a href="#" class="btn btn-primary btn-comprar" onclick="comprarLibro('El nombre del viento')">Comprar</a>
-          </div>
-        </div>
+    <h1>Contacto</h1>
+    <p>Ponte en contacto con nosotros:</p>
+    <form action="mailto:libreriaSomisa@gmail.com.ar" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre">
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Cien años de soledad</h5>
-            <p class="card-text">Autor: Gabriel García Márquez</p>
-            <p class="card-text">Año: 1967</p>
-            <p class="card-text">Precio: $25</p>
-            <a href="#" class="btn btn-primary btn-comprar" onclick="comprarLibro('Cien años de soledad')">Comprar</a>
-          </div>
-        </div>
+      <div class="form-group">
+        <label for="inconveniente">Inconveniente:</label>
+        <textarea class="form-control" id="inconveniente" name="inconveniente" rows="3"></textarea>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">1984</h5>
-            <p class="card-text">Autor: George Orwell</p>
-            <p class="card-text">Año: 1949</p>
-            <p class="card-text">Precio: $18</p>
-            <a href="#" class="btn btn-primary btn-comprar" onclick="comprarLibro('1984')">Comprar</a>
-          </div>
-        </div>
-      </div>
-    </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <ul>
+      <li>Email: libreriaSomisa@gmail.com.ar</li>
+      <li>Teléfono: +54 3364204789</li>
+    </ul>
+    <a href="https://api.whatsapp.com/send?phone=5493364204789" target="_blank">Contactar por WhatsApp</a>
+    <br>
+    <a href="https://www.instagram.com/libreriasomisa/" target="_blank">Instagram</a>
+    <br>
+    <a href="https://twitter.com/libreriasomisa" target="_blank">Twitter</a>
   </div>
 
   <footer class="bg-light text-center text-lg-start">
     <div class="text-center p-3">
-      © 2024 Librería
+      © 2024 Librería Somisa
     </div>
   </footer>
 
@@ -107,12 +66,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <script>
-    function comprarLibro(nombreLibro) {
-      alert('Has comprado el libro: ' + nombreLibro);
-    }
-  </script>
 </body>
 </html>
 
