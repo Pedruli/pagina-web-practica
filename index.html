@@ -3,7 +3,7 @@
 <head>
   <style>
     body {
-      color: white; 
+      color: white; /* Cambiar color del texto a blanco */
       background-image: url(./imagenes/istockphoto-1386193712-612x612.jpg);
       background-size: cover; 
       background-position: center; 
@@ -11,9 +11,13 @@
     }
 
     footer {
-      position: absolute; 
-      bottom: 0; 
-      width: 100%; 
+      position: absolute; /* Posicionamiento absoluto */
+      bottom: 0; /* Colocar al pie de la página */
+      width: 100%; /* Ancho completo */
+    }
+
+    .titulo-bienvenida, .subtitulo-libros {
+      color: white; /* Cambiar color del texto a blanco */
     }
   </style>
   
@@ -47,8 +51,8 @@
   </header>
 
   <div class="container">
-    <h1>Bienvenido a nuestra librería</h1>
-    <h2>Algunos libros destacados</h2>
+    <h1 class="titulo-bienvenida">Bienvenido a nuestra librería</h1>
+    <h2 class="subtitulo-libros">Algunos libros destacados</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="card">
@@ -86,7 +90,7 @@
     </div>
   </div>
 
-  <footer class="bg-light text-center text-lg-start mt-5"> 
+  <footer class="bg-light text-center text-lg-start mt-5"> <!-- Añadido margen top para separar del contenido -->
     <div class="text-center p-3">
       © 2024 Librería
     </div>
