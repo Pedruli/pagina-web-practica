@@ -16,9 +16,10 @@
   }
 
   footer {
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black; /* Cambiado a negro */
   }
 
   .titulo-bienvenida, .subtitulo-libros {
@@ -30,6 +31,10 @@
     bottom: 20px;
     left: 20px;
     z-index: 1000;
+  }
+
+  .card-text {
+    color: black; /* Cambiado a negro */
   }
 </style>
 <body>
@@ -57,7 +62,7 @@
   </header>
 
   <div class="container">
-    <h1>Nuestra colección de libros</h1>
+    <h1 class="titulo-bienvenida">Nuestra colección de libros</h1>
     <div class="row">
       <div class="col-md-4">
         <div class="card">
@@ -117,6 +122,7 @@
   </script>
 </body>
 </html>
+
 
 
 
