@@ -33,10 +33,22 @@
   <div class="container">
     <h1>Contacto</h1>
     <p>Ponte en contacto con nosotros:</p>
+    <form action="mailto:libreriaSomisa@gmail.com.ar" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="inconveniente">Inconveniente:</label>
+        <textarea class="form-control" id="inconveniente" name="inconveniente" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
     <ul>
       <li>Email: libreriaSomisa@gmail.com.ar</li>
       <li>Teléfono: +54 3364204789</li>
     </ul>
+    <a href="https://api.whatsapp.com/send?phone=5493364204789" target="_blank">Contactar por WhatsApp</a>
   </div>
 
   <footer class="bg-light text-center text-lg-start">
@@ -50,7 +62,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <a href="JAJA.jpg" download>Descargar Documento</a>
 </body>
 </html>
 
