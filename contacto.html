@@ -14,6 +14,9 @@
       background-position: center; 
       background-repeat: no-repeat; 
     }
+    .text-white {
+      color: white;
+    }
   </style>
   
   <header>
@@ -40,32 +43,32 @@
   </header>
 
   <div class="container">
-    <h1>Contacto</h1>
-    <p>Ponte en contacto con nosotros:</p>
+    <h1 class="text-white">Contacto</h1>
+    <p class="text-white">Ponte en contacto con nosotros:</p>
     <form action="mailto:libreriaSomisa@gmail.com.ar" method="post" enctype="text/plain">
       <div class="form-group">
-        <label for="nombre">Nombre y Apellido:</label>
+        <label for="nombre" class="text-white">Nombre y Apellido:</label>
         <input type="text" class="form-control" id="nombre" name="nombre">
       </div>
       <div class="form-group">
-        <label for="inconveniente">Inconveniente:</label>
+        <label for="inconveniente" class="text-white">Inconveniente:</label>
         <textarea class="form-control" id="inconveniente" name="inconveniente" rows="3"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-    <ul>
+    <ul class="text-white">
       <li>Email: libreriaSomisa@gmail.com.ar</li>
       <li>Teléfono: +54 3364204789</li>
     </ul>
-    <a href="https://api.whatsapp.com/send?phone=5493364204789" target="_blank">Contactar por WhatsApp</a>
+    <a href="https://api.whatsapp.com/send?phone=5493364204789" target="_blank" class="text-white">Contactar por WhatsApp</a>
     <br>
-    <a href="https://www.instagram.com/libreriasomisa/" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/libreriasomisa/" target="_blank" class="text-white">Instagram</a>
     <br>
-    <a href="https://twitter.com/libreriasomisa" target="_blank">Twitter</a>
+    <a href="https://twitter.com/libreriasomisa" target="_blank" class="text-white">Twitter</a>
   </div>
 
-  <footer class="bg-light text-center text-lg-start">
-    <div class="text-center p-3">
+  <footer class="bg-light text-center text-lg-start mt-5"> <!-- Añadido margen top para separar del contenido -->
+    <div class="text-center p-3 text-white">
       © 2024 Librería Somisa
     </div>
   </footer>
